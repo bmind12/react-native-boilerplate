@@ -1,0 +1,29 @@
+{
+    "extends": [
+        "airbnb-base",
+        "plugin:react/recommended",
+        "prettier",
+        "prettier/react"
+    ],
+    "plugins": ["react-native"],
+    "parserOptions": {
+        "ecmaVersion": 2019,
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "rules": {
+        "no-use-before-define": [
+            "error",
+            {
+                "variables": false
+            }
+        ],
+        "react-native/no-unused-styles": 2
+    }
+}
