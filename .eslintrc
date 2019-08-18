@@ -1,0 +1,38 @@
+{
+    "extends": [
+        "airbnb-base",
+        "plugin:react/recommended",
+        "prettier",
+        "prettier/react"
+    ],
+    "plugins": ["react-native"],
+    "parserOptions": {
+        "ecmaVersion": 2019,
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        },
+        "import/resolver": {
+            "babel-module": {
+                "root": ["./src"],
+                "alias": {
+                    "navigation/*": "./navigation/*",
+                    "screens/*": "./screens/*"
+                }
+            }
+        }
+    },
+    "rules": {
+        "no-use-before-define": [
+            "error",
+            {
+                "variables": false
+            }
+        ],
+        "react-native/no-unused-styles": 2
+    }
+}
