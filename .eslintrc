@@ -15,6 +15,15 @@
     "settings": {
         "react": {
             "version": "detect"
+        },
+        "import/resolver": {
+            "babel-module": {
+                "root": ["./src"],
+                "alias": {
+                    "navigation/*": "./navigation/*",
+                    "screens/*": "./screens/*"
+                }
+            }
         }
     },
     "rules": {
